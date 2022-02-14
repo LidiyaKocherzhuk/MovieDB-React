@@ -17,11 +17,10 @@ const initialState = {
 export const getMoviesThank = createAsyncThunk(
     "moviesSlice/getMoviesThank",
 
-    async ({numberPage, idGenres, value, status}, {dispatch, rejectWithValue}) => {
+    async ({numberPage, idGenres, value}, {dispatch, rejectWithValue}) => {
         try {
             const {data} = await apiService.getMovies(numberPage, idGenres, value)
             dispatch(addMovies({pages: data, movies: data.results}))
-            return status
         } catch (e) {
            return rejectWithValue({massage:e.massage})
         }
