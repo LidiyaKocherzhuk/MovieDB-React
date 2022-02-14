@@ -1,26 +1,26 @@
-import {useEffect} from "react";
+import {Route, Routes} from "react-router-dom";
 
-import {apiService} from "./services/api.service";
+import "./App.css";
+import {Header, PosterPreview} from "./components";
+import {MoviesPage} from "./Containers";
 
 function App() {
 
-  useEffect(() => {
-      fetchMovies()
-  }, [])
 
-  const fetchMovies = async () => {
+    return (
+        <div className={"pages"}>
 
-      const {data} = await apiService.getMovies()
+            <Routes>
+                <Route path={"/"} element={<Header/>}>
+                    <Route index element={<MoviesPage/>}/>
+                    <Route path={"movies"} element={<MoviesPage/>}>
+                        <Route path={"posterPreview"} element={<PosterPreview/>}/>
+                    </Route>
+                </Route>
+            </Routes>
 
-      console.log(data)
-
-  }
-
-  return (
-    <div>
-
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

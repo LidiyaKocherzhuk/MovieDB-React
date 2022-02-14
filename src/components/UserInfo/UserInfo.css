@@ -1,0 +1,22 @@
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 0 4px 0 wheat;
+    border-radius: 47px;
+    width: 18%;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.user img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user h3 {
+    color: #fafafa;
+    font-family: cursive;
+
+}

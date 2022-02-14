@@ -1,0 +1,72 @@
+.my {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    background: url("https://s3.amazonaws.com/prod.assets.thebanner/styles/article-large/s3/article/large/Graphics_web_2021-11-12_dune.jpg?itok=-cw-HDth") center/cover no-repeat fixed;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+}
+
+.carouselsMovies {
+    min-height: 150vh;
+    z-index: 1;
+}
+.posterImg {
+    width: 100%;
+}
+
+.carousel {
+    min-height: 220px;
+    color: white;
+    margin: 25px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel h2 {
+    margin: 20px;
+    font-family: cursive;
+    text-align: center;
+    font-size: 35px;
+}
+.left{
+    width: 50px;
+    color: #ffffff;
+    position: absolute;
+    height: 30px;
+    left: -30px;
+    cursor: pointer;
+}
+.left:hover{
+    height: 40px;
+}
+
+.right{
+    width: 50px;
+    color: #ffffff;
+    position: absolute;
+    height: 30px;
+    right: -30px;
+    cursor: pointer;
+}
+.right:hover{
+    height: 40px;
+}
+
+.window {
+    width: 93vw;
+    overflow: hidden;
+}
+.tripWithCards{
+    width: 93vw;
+    display: flex;
+}

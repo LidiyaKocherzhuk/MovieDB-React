@@ -1,0 +1,14 @@
+.search input {
+    background: #00000047;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 0 4px 0 wheat;
+    border: none;
+    color: #fafafa;
+}
+
+.search button {
+    margin-left: 5px;
+    color: #fafafa;
+    font-family: cursive;
+}

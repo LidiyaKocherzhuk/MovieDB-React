@@ -1,0 +1,60 @@
+.moviesList{
+    display: flex;
+}
+.content h2{
+    margin: 20px;
+    font-family: cursive;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.movies {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+    row-gap: 25px;
+}
+
+.btnPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+}
+.btnPage button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffffa1;
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: cursive;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+/*GENRES*/
+
+.genresAll {
+    width: 20%;
+    text-align: end;
+    padding: 20px 30px;
+}
+
+.genresAll h2 {
+    font-family: cursive;
+    background: #0000005c;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 0 0 15px;
+    margin-bottom: 15px;
+
+    border: 1px solid #37076a;
+    border-radius: 35px;
+    box-shadow: 0 1px 9px 0 #000000;
+}

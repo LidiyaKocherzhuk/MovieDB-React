@@ -1,0 +1,15 @@
+.btnClose{
+    border: 1px solid black;
+    box-shadow: 0 0 5px 0 white;
+    margin: 15px 70px;
+    padding: 10px 30px;
+    background: #00000069;
+    color: white;
+}
+.infoBottom{
+    padding-left: 50%;
+}
+.info span{
+    font-style: italic;
+    font-size: 16px;
+}

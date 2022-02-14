@@ -1,0 +1,39 @@
+.poster {
+    background-size: cover;
+    background-position: top center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    position: relative;
+}
+.btnPoster{
+    border: 1px solid black;
+    box-shadow: 0 0 5px 0 white;
+    margin: 50px 70px;
+    padding: 15px 20px;
+    background: #00000069;
+    color: white;
+}
+
+.blockInfo {
+    position: absolute;
+    display: flex;
+    top:-1500px;
+    width: 96%;
+    height: 90%;
+    justify-content: center;
+    margin: 0 20px;
+    column-gap: 20px;
+    box-shadow: 0 0 20px 4px black;
+    background: #000000b3;
+    color: white;
+}
+.description{
+    margin: 50px;
+    color: white;
+}
+
+

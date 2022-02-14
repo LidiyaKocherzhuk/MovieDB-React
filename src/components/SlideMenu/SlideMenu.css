@@ -1,0 +1,18 @@
+.slideCard{
+    min-width: 22%;
+    margin: 15px 1.5%;
+    z-index: 999;
+}
+
+.slideCard button{
+    color: white;
+}
+
+.slideCard img{
+    width: 100%;
+}
+
+.slideCard img:hover{
+    box-shadow: 0 0 10px rgb(63 3 125);
+    width: 105%;
+}
