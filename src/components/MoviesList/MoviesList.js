@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
+import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 import {addDetails, getMoviesThank} from "../../store/slices/movies.slice";
 import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {getGenresThank} from "../../store/slices/genres.slice";
 import {Genre} from "../Genre/Genre";
 import "./MoviesList.css";
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 const MoviesList = () => {
 
@@ -26,14 +26,12 @@ const MoviesList = () => {
 
         setPage(page - 1)
         window.scrollTo(0,1220);
-        dispatch(addDetails({details: null}))
     }
 
     const btnNext = () => {
 
         setPage(page + 1);
         window.scrollTo(0,1220);
-        dispatch(addDetails({details: null}))
     }
 
 
